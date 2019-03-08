@@ -8,7 +8,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from nltk.corpus import stopwords
 from sklearn.model_selection import train_test_split  
 
-
+#nltk.download('stopwords')
 data = pd.read_csv(".\\bully.csv")
 data = pd.DataFrame(data)
 data = data.values
