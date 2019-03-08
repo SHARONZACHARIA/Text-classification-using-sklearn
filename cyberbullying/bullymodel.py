@@ -1,13 +1,13 @@
 import numpy as np
 import nltk 
 import pandas as pd 
-import pickle
+
 import sklearn
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.feature_extraction.text import CountVectorizer 
 from nltk.corpus import stopwords
 from sklearn.model_selection import train_test_split  
-from sklearn.metrics import accuracy_score
+
 
 data = pd.read_csv(".\\bully.csv")
 data = pd.DataFrame(data)
