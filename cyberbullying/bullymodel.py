@@ -27,12 +27,10 @@ X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_
 classifier = RandomForestClassifier(n_estimators=50, random_state=0)  
 classifier.fit(X_train, y_train)  
 
-def predict_class(data):
+def predict_class(data)
     
-    data_array = []
-    data_array.append(data)
     custom = CountVectorizer(vocabulary= vectorizer.vocabulary_)
-    newdata = custom.fit_transform(data_array).toarray()
+    newdata = custom.fit_transform(data).toarray()
     y_pred = classifier.predict(newdata)
     return y_pred
 
